@@ -23,7 +23,7 @@ public class Parser {
 		
 		while (scan.hasNextLine()) {
 			String line = scan.nextLine();
-			String[] data = line.split(";");
+			String[] data = line.split(settings.getSeparator());
 
 			String firstname = data[settings.getColFirstName()].trim();
 			String lastname = data[settings.getColLastName()].trim();

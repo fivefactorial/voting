@@ -2,16 +2,16 @@ package se.fivefactorial.voting;
 
 public class Settings {
 	private int seats = 27;
-	private int blank = 2;
+	private int blank = 0;
 	private String filename = "data.csv";
-	private boolean hasCSVHeader = false;
+	private boolean hasCSVHeader = true;
 	private int colFirstName = 2;
 	private int colLastName = 3;
 	private int colBallotID = 0;
-	private String separator = ";";
+	private String separator = ",";
 	private int colGuild = 4;
 	private int colRating = 1;
-	private boolean ratingDESC = false;
+	private boolean ratingDESC = true;
 
 	public int getColBallotID() {
 		return colBallotID;

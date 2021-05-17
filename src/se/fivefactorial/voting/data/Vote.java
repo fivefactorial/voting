@@ -13,10 +13,11 @@ public class Vote implements Comparable<Vote> {
 
 	@Override
 	public int compareTo(Vote v) {
-		if (sortDESC)
-			return v.prio - prio;
-		else
-			return prio - v.prio;
+		if (sortDESC) {
+			return Integer.compare(v.prio, prio);
+		} else {
+			return Integer.compare(prio, v.prio);
+		}
 	}
 
 	@Override
